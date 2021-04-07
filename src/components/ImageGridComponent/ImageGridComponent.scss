@@ -1,0 +1,26 @@
+.ImageGridComponent{
+    margin: auto;
+    padding: 30px 0 30px 0;
+    max-width: 960px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    .ImageComponent{
+        width: 240px;
+    }
+    
+    //481px-768px: iPads, Tablets
+    @media screen and (min-width: 30.0625em) and (max-width: 48em){
+        .ImageComponent{
+            width: 33%;
+        }
+    }
+    
+    //320px-480px: Mobile devices
+    @media screen and (min-width: 20em) and (max-width: 30em){
+        .ImageComponent{
+            width: 50%;
+        }
+    }
+}
