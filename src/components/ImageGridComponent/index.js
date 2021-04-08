@@ -28,8 +28,8 @@ function ImageGridComponent() {
         ...pagination,
         totalCount,
         totalPage,
+        hasMore: !(totalPage === currentPage + 1),
         currentPage: currentPage + 1,
-        hasMore: totalPage === currentPage + 1
       });
     } catch (e) {
       console.error(e);
