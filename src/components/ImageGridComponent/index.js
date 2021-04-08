@@ -8,7 +8,7 @@ function ImageGridComponent() {
   const GIPHY_MEDIA_URL = process.env.REACT_APP_GIPHY_MEDIA_URL;
   const [images, setImages] = useState([]);
   const [isFetching, setIsFetching] = useState(false);
-  const [pagination, setPagination] = useState({currentPage: 0, limit: 8});
+  const [pagination, setPagination] = useState({currentPage: 0, limit: 20});
 
 
   useEffect(() => {
