@@ -67,7 +67,7 @@ function ImageGridComponent() {
   return (
     <div className="ImageGridComponent">
       {renderGifs()}
-      {renderLoadMoreBtn()}
+      {pagination.hasMore && renderLoadMoreBtn()}
     </div>
   )
 }
